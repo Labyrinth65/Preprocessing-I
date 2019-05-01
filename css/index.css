@@ -133,4 +133,111 @@ table {
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
+}
+h2 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.6rem;
+}
+.date {
+  font-size: 1.6rem;
+}
+.text {
+  font-size: 1.6rem;
+}
+.nav-button {
+  text-decoration: none;
+  color: grey;
+}
+.nav-button:hover {
+  border: 1px solid white;
+  color: blue;
+  transition: 1s;
+}
+.flex-row-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.flex-column-wrap {
+  display: flex;
+  flex-flow: column wrap;
+}
+.container {
+  max-width: 900px;
+  margin: 1% 4%;
+}
+.container header {
+  display: flex;
+  flex-flow: column wrap;
+  border-bottom: 1px solid black;
+}
+.container header h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2%;
+  border-bottom: 1px solid black;
+}
+.container header nav {
+  padding: 2%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.container header nav a {
+  text-decoration: none;
+  color: grey;
+  font-size: 1.6rem;
+}
+.container header nav a:hover {
+  border: 1px solid white;
+  color: blue;
+  transition: 1s;
+}
+.container .intro {
+  padding: 2%;
+}
+.container .intro .text {
+  padding: 1% 0;
+}
+.container .skills {
+  padding: 0 2%;
+}
+.container .skills ul {
+  padding: 1% 0;
+  font-size: 1.6rem;
+  list-style-type: square;
+  list-style-position: inside;
+}
+.container .skills ul li {
+  padding: 1% 0;
+}
+.container .history {
+  padding: 1% 2%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.container .history .history-title {
+  width: 100%;
+  padding: 1% 0;
+}
+.container .history .work {
+  width: 48%;
+}
+.container .history .work .col-title {
+  font-size: 1.8rem;
+  padding: 1% 0;
+}
+.container .history .education {
+  width: 48%;
+}
+.container .history .education .col-title {
+  font-size: 1.8rem;
+  padding: 1% 0;
+}
+.container footer {
+  padding: 1% 2%;
 }
