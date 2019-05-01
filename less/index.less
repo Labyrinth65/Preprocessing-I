@@ -62,9 +62,11 @@ html, body {
 @title-font: 2.5rem;
 @medium-font: 2rem;
 @reg-font: 1.6rem;
+@small-font: 1.2rem;
 
 h2 {
 	font-size: @medium-font;
+	font-weight: 700;
 }
 
 h4 {
@@ -72,7 +74,7 @@ h4 {
 }
 
 .date {
-	font-size: @reg-font;
+	font-size: @small-font;
 }
 
 .text {
@@ -117,6 +119,7 @@ h4 {
 			text-align: center;
 			padding: 2%;
 			.borderBot(1px);
+			font-weight: 1000;
 		}
 		nav {
 			padding: 2%;
@@ -157,23 +160,114 @@ h4 {
 		}
 		.work {
 			width: 48%;
+			.col-header {
+				.diamond {
+					content: ' ';
+					position: absolute;
+					margin-top: 0.5%;
+					width: 15px;
+					height: 15px;
+					background: lightgreen;
+					transform: rotate(45deg);
+				}
 				.col-title {
 					font-size: 1.8rem;
+					padding: 1% 1% 1% 6%;
+					font-weight: 600;
+				}
+			}
+			.timeline-block {
+				position: relative;
+				padding: 2% 1% 0 5%;
+				margin-left: 1.5%;
+				border-left: 1px solid lightgreen;
+				.date::before {
+					content: ' ';
+					position: absolute;
+					left: -1.5%;
+					top: 8%;
+					width: 10px;
+					height: 10px;
+					background: lightgreen;
+					border-radius: 50%;
+				}
+				h4 {
+					padding: 1% 0;
+					font-weight: 600;
+				}
+				.text {
 					padding: 1% 0;
 				}
+			}
 		}
 		.education {
 			width: 48%;
+			.col-header {
+				.diamond {
+					content: ' ';
+					position: absolute;
+					margin-top: 0.5%;
+					width: 15px;
+					height: 15px;
+					background: lightgreen;
+					transform: rotate(45deg);
+				}
 				.col-title {
 					font-size: 1.8rem;
+					padding: 1% 1% 1% 6%;
+					font-weight: 600;
+				}
+			}
+			.timeline-block {
+				position: relative;
+				padding: 2% 1% 0 5%;
+				margin-left: 1.5%;
+				border-left: 1px solid lightgreen;
+				.date::before {
+					content: ' ';
+					position: absolute;
+					left: -1.5%;
+					top: 8%;
+					width: 10px;
+					height: 10px;
+					background: lightgreen;
+					border-radius: 50%;
+				}
+				h4 {
+					padding: 1% 0;
+					font-weight: 600;
+				}
+				.text {
 					padding: 1% 0;
 				}
+			}
 		}
 	}
 
 	footer {
 		padding: 1% 2%;
+		h2 {
+			padding-bottom: 1%;
+		}
+		
 	}
+}
+
+@media (max-width: 500px) {
+	.container {
+		.history {
+			.flex-column-wrap();
+			.work {
+				padding: 2% 0;
+				width: 96%;
+			}
+			.education {
+				padding: 2% 0;
+				width: 96%;
+			}
+		}
+	}
+	
 }
 
 
