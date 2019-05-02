@@ -1,1 +1,326 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+h4 {
+  font-size: 1.6rem;
+}
+.date {
+  font-size: 1.2rem;
+}
+.text {
+  font-size: 1.6rem;
+}
+.nav-button {
+  text-decoration: none;
+  color: grey;
+}
+.nav-button:hover {
+  border: 1px solid white;
+  color: blue;
+  transition: 1s;
+}
+.flex-row-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.flex-column-wrap {
+  display: flex;
+  flex-flow: column wrap;
+}
+.container {
+  max-width: 900px;
+  margin: 1% 4%;
+}
+.container header {
+  display: flex;
+  flex-flow: column wrap;
+  border-bottom: 1px solid black;
+}
+.container header h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2%;
+  border-bottom: 1px solid black;
+  font-weight: 1000;
+}
+.container header nav {
+  padding: 2%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.container header nav a {
+  text-decoration: none;
+  color: grey;
+  font-size: 1.6rem;
+}
+.container header nav a:hover {
+  border: 1px solid white;
+  color: blue;
+  transition: 1s;
+}
+.container .intro {
+  padding: 2%;
+}
+.container .intro .text {
+  padding: 1% 0;
+}
+.container .skills {
+  padding: 0 2%;
+}
+.container .skills ul {
+  padding: 1% 0;
+  font-size: 1.6rem;
+  list-style-type: square;
+  list-style-position: inside;
+}
+.container .skills ul li {
+  padding: 1% 0;
+}
+.container .history {
+  padding: 1% 2%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.container .history .history-title {
+  width: 100%;
+  padding: 1% 0;
+}
+.container .history .work {
+  width: 48%;
+}
+.container .history .work .col-header .diamond {
+  content: ' ';
+  position: absolute;
+  margin-top: 0.5%;
+  width: 15px;
+  height: 15px;
+  background: lightgreen;
+  transform: rotate(45deg);
+}
+.container .history .work .col-header .col-title {
+  font-size: 1.8rem;
+  padding: 1% 1% 1% 6%;
+  font-weight: 600;
+}
+.container .history .work .timeline-block {
+  position: relative;
+  padding: 2% 1% 0 5%;
+  margin-left: 1.5%;
+  border-left: 1px solid lightgreen;
+}
+.container .history .work .timeline-block .date::before {
+  content: ' ';
+  position: absolute;
+  left: -1.5%;
+  top: 8%;
+  width: 10px;
+  height: 10px;
+  background: lightgreen;
+  border-radius: 50%;
+}
+.container .history .work .timeline-block h4 {
+  padding: 1% 0;
+  font-weight: 600;
+}
+.container .history .work .timeline-block .text {
+  padding: 1% 0;
+}
+@media (max-width: 500px) {
+  .container .history .work {
+    padding: 2% 0;
+    width: 96%;
+  }
+}
+.container .history .education {
+  width: 48%;
+}
+.container .history .education .col-header .diamond {
+  content: ' ';
+  position: absolute;
+  margin-top: 0.5%;
+  width: 15px;
+  height: 15px;
+  background: lightgreen;
+  transform: rotate(45deg);
+}
+.container .history .education .col-header .col-title {
+  font-size: 1.8rem;
+  padding: 1% 1% 1% 6%;
+  font-weight: 600;
+}
+.container .history .education .timeline-block {
+  position: relative;
+  padding: 2% 1% 0 5%;
+  margin-left: 1.5%;
+  border-left: 1px solid lightgreen;
+}
+.container .history .education .timeline-block .date::before {
+  content: ' ';
+  position: absolute;
+  left: -1.5%;
+  top: 8%;
+  width: 10px;
+  height: 10px;
+  background: lightgreen;
+  border-radius: 50%;
+}
+.container .history .education .timeline-block h4 {
+  padding: 1% 0;
+  font-weight: 600;
+}
+.container .history .education .timeline-block .text {
+  padding: 1% 0;
+}
+@media (max-width: 500px) {
+  .container .history .education {
+    padding: 2% 0;
+    width: 96%;
+  }
+}
+.container footer {
+  padding: 1% 2%;
+}
+.container footer h2 {
+  padding-bottom: 1%;
+}
