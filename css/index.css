@@ -266,6 +266,12 @@ h4 {
 .container .history .work .timeline-block .text {
   padding: 1% 0;
 }
+@media (max-width: 500px) {
+  .container .history .work {
+    padding: 2% 0;
+    width: 96%;
+  }
+}
 .container .history .education {
   width: 48%;
 }
@@ -306,23 +312,15 @@ h4 {
 .container .history .education .timeline-block .text {
   padding: 1% 0;
 }
+@media (max-width: 500px) {
+  .container .history .education {
+    padding: 2% 0;
+    width: 96%;
+  }
+}
 .container footer {
   padding: 1% 2%;
 }
 .container footer h2 {
   padding-bottom: 1%;
-}
-@media (max-width: 500px) {
-  .container .history {
-    display: flex;
-    flex-flow: column wrap;
-  }
-  .container .history .work {
-    padding: 2% 0;
-    width: 96%;
-  }
-  .container .history .education {
-    padding: 2% 0;
-    width: 96%;
-  }
 }
